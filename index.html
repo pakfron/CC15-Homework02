@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: relative;
+            margin: auto;
+            margin-top: 20px;
+            border: 1px solid rgb(223, 223, 223);
+            width: 200px;
+            height: 260px;
+            border-radius: 10px;
+            box-shadow: 4px 5px 24px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 4px 5px 24px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 5px 24px 0px rgba(0,0,0,0.75);
+
+        }
+        .xxxx {
+            position: absolute;
+            color: gray;
+            left: 5px;
+            top: 2px;
+        }
+        .numberseven {
+            color: white;
+            display: flex;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            z-index: 1;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            right: -20px;
+            top: -20px;
+            
+        }
+        .profile{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+
+        .picture > img {
+            width: 200px;
+        }
+        .picture {
+            height: 80%;
+            border-bottom: 0.5px solid rgb(223, 223, 223);
+        }
+        .user {
+            margin-top: 10px;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="xxxx">X</div>
+        <div class="numberseven">9</div>
+        <div class="profile">
+            <div class="picture">
+                <img src="./human-man-10.svg" alt="">
+            </div>
+            <div class="user">A.Regular</div>
+        </div>
+    </div>
+</body>
+</html>
